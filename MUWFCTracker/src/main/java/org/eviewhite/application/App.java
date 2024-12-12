@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class App {
-    // File paths for the CSV files containing players, matches, and staff data
+    //File paths for the CSV files containing players, matches, and staff data
     public static final String PLAYER_FILE_PATH = "MUWFCTracker/src/main/resources/players.csv";
     public static final String MATCH_FILE_PATH = "MUWFCTracker/src/main/resources/matches.csv";
     public static final String STAFF_FILE_PATH = "MUWFCTracker/src/main/resources/staff.csv";

@@ -22,6 +22,11 @@ public class Match {
         return ("Match " + matchDay + ":  " + " " + matchDate + " " + leg + " " + opponent + " " + score);
     }
 
+    //Method to return the attributes in a format for writing the match to file (CSV)
+    public String matchFileString() {
+        return (matchDay + "," + matchDate + "," + leg + "," + opponent + "," + score);
+    }
+
     //Getter methods to return matchday, match-date, opponent team, match leg (home or away) and score
     public int getMatchDay() {
         return this.matchDay;
@@ -46,10 +51,5 @@ public class Match {
     //Setter to update score
     public void setScore(String inputScore) {
         this.score = inputScore;
-    }
-
-    //Method to return the attributes in a format for writing the match to file (CSV)
-    public String matchFileString() {
-        return (matchDay + "," + matchDate + "," + leg + "," + opponent + "," + score);
     }
 }
