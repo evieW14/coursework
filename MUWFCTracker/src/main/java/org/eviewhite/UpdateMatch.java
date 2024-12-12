@@ -13,6 +13,8 @@ import java.util.Scanner;
 //Update Match class
 public final class UpdateMatch {
 
+    private UpdateMatch(){}
+
     //Set up goalsScored variable
     private static int goalsScored;
 

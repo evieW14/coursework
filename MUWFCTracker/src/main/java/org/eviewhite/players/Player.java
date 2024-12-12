@@ -23,47 +23,41 @@ public class Player extends Person {
         this.assists = ast;
     }
 
-    //Getter for player's position
+    //Getter for player's position, number, appearances, goals, assists
+    //Also setters for appearances, goals and assists as these can be changed in the program
     public String getPosition() {
         return position;
     }
 
-    //Getter for player's number
     public int getNumber() {
         return number;
     }
 
-    //Getter for player's appearances
     public int getApps() {
         return appearances;
     }
 
-    //Setter for player's appearances
     public void setApps(int apps) {
         this.appearances = apps;
     }
 
-    //Getter for player's goals
     public int getGoals() {
         return goals;
     }
 
-    //Setter for player's goals
     public void setGoals(int gls) {
         this.goals = gls;
     }
 
-    //Getter for player's assists
     public int getAssists() {
         return assists;
     }
 
-    //Setter for player's assists
     public void setAssists(int ast) {
         this.assists = ast;
     }
 
-    //Player string output method
+    //Override toString method for Player string output
     public String toString() {
         return ("Player: " + super.getName() + " (" + position + ") (" + super.getAge() + ") (#" + number + ")");
     }

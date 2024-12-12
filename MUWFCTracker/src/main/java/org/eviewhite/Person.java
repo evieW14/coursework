@@ -18,22 +18,19 @@ public abstract class Person {
     }
 
     //Public getters to be used by child-classes
-    //Getter for name
+    //Getter for name, Age, Nationality and datejoined
     public String getName() {
         return fullName;
     }
 
-    //Getter for Age
     public int getAge() {
         return age;
     }
 
-    //Getter for Nationality
     public String getNationality() {
         return nation;
     }
 
-    //Getter for dateJoined
     public String getDateJoined() {
         return dateJoined;
     }

@@ -26,10 +26,9 @@ public class App {
         staffList = new StaffList(STAFF_FILE_PATH);
         Scanner myScanner = new Scanner(System.in);
         //User welcome message
-        System.out.println("Welcome to the 24-25 Manchester United Women's Season.");
+        System.out.println("Welcome to the 24-25 Manchester United Women's Season Tracker.");
         //Call gameMenu method to begin program
         Menu trackerMenu = new Menu(myScanner);
         trackerMenu.gameMenu();
-
     }
 }

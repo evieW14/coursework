@@ -27,7 +27,7 @@ public class Staff extends Person {
         return trophies;
     }
 
-    //Method to build Staff output string
+    //Override toString Method to build Staff output string
     public String toString() {
         return ("Staff: " + super.getName() + " (" + jobRole + ") (" + super.getAge() + ") (Trophies: " + getTrophies() + ")");
     }
