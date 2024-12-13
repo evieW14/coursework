@@ -26,7 +26,7 @@ class MatchListTest {
     private final ByteArrayOutputStream outContent = new ByteArrayOutputStream();
 
     //Set up MatchList object
-    private MatchList testMatchList;
+    private static MatchList testMatchList;
 
     //this is run before each test and sets the System output to point to the outContent output stream. Also creates a new instance of the matchList so that a fresh instance is used in each test (so that any changes made during testing does not affect the next test)
     @BeforeEach

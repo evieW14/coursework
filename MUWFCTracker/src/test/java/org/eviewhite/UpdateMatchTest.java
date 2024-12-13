@@ -3,6 +3,7 @@ package org.eviewhite;
 import org.eviewhite.application.App;
 import org.eviewhite.matches.MatchList;
 import org.eviewhite.players.SquadList;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -40,8 +41,7 @@ class UpdateMatchTest {
         resetFiles();
     }
 
-
-    //This method handles rewriting the match/player test files to their original state. This is because some tests involve changing these files whereas others need the original state so this prevents any changes being made, affecting other tests.
+    //This method handles rewriting the match/player test files to their original state needed for these tests. This is because some tests involve changing these files whereas others need the original state so this prevents any changes being made, affecting other tests.
     void resetFiles() throws IOException {
         PrintWriter writerMatch = new PrintWriter(TEST_FILE_MATCHES);
         writerMatch.print("1,5/11/2024,(H),Test Match United,1-0\n");
