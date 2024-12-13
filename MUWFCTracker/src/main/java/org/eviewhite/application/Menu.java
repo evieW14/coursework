@@ -63,7 +63,7 @@ public class Menu {
             }
 
             //Asks user if they would like to continue after completing menu option task.
-            System.out.println("Do you wish to proceed? Y/N ");
+            System.out.println("Do you wish to proceed? Y/N");
             String answer = myScanner.nextLine();
             //If no, the menu loop is exited.
             if (answer.equalsIgnoreCase("N")) {

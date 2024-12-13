@@ -66,6 +66,7 @@ public class SquadList {
             //Get the name of each player object and check if it contains the input from the user
             if (p.getName().contains(playerChoice)) {
                 //If so, call the playerDetails method and output the details to the user.
+                System.out.println(p.getName());
                 String details = p.playerDetailsToString();
                 System.out.println(details);
                 //Player is found
