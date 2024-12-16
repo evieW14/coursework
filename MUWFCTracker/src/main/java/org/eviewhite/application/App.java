@@ -27,8 +27,9 @@ public class App {
         Scanner myScanner = new Scanner(System.in);
         //User welcome message
         System.out.println("Welcome to the 24-25 Manchester United Women's Season Tracker.");
-        //Call gameMenu method to begin program
+        //Create menu object and pass in myScanner as a parameter for the menu to use
         Menu trackerMenu = new Menu(myScanner);
+        //Call gameMenu method to begin program
         trackerMenu.gameMenu();
     }
 }

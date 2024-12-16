@@ -23,7 +23,17 @@ public class Menu {
             //main loop for the 5 menu options
             System.out.println("In this programme, you have 5 menu options.");
             System.out.println("1. View Squad + Staff\n2. View Player Details \n3. Match Results \n4. Match Update \n5. Exit");
-            int userMenuOption = myScanner.nextInt();
+            int userMenuOption;
+
+            //Check if the value the user has entered is an integer, if not, userMenuOption will be set to 6 as this will run the default statement in the following switch-case
+            //Else, if it is an integer, that value will be cast to userMenuOption
+            if(!myScanner.hasNextInt()){
+                userMenuOption = 6;
+            }
+            else{
+                userMenuOption = myScanner.nextInt();
+            }
+
             myScanner.nextLine();
 
             //Switch statement to read user input (option) and handle menu options
